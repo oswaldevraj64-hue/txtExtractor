@@ -47,7 +47,8 @@ if Config.AUTH_USERS:
     AUTH_USERS = [int(chat) for chat in Config.AUTH_USERS.split() if chat.strip()]
 else:
     AUTH_USERS = []
-
+    
+print("AUTH_USERS ENV =", Config.AUTH_USERS)
 # Prefixes 
 prefixes = ["/", "~", "?", "!"]
 
