@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     aria2 \
     build-essential \
-    && apt-get clean \
-    && pip install --no-cache-dir -r requirements.txt
+    && apt-get clean 
+RUN pip install --no-cache-dir -r requirements.txt
 CMD [ "python", "./main.py" ]
